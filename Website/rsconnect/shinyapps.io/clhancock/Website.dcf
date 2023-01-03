@@ -1,0 +1,13 @@
+name: Website
+title: Website
+username:
+account: clhancock
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7958488
+bundleId: 6687771
+url: https://clhancock.shinyapps.io/Website/
+when: 1672589097.49702
+lastSyncTime: 1672589097.49707
+asMultiple: FALSE
+asStatic: FALSE
