@@ -19,18 +19,25 @@ ui <- fluidPage(theme = shinytheme("yeti"),
                                h4("Northern Arizona University"),
                                h4("School of Earth and Sustainability"),
                                h3(HTML("<b>About:</b>")),
-                               h4("I am a paleoclimatologist studying past climate variability to better understand how modern climate change could impact the natural environment. My research combines information from paleoclimate proxies with climate model simulations to reconstruct the response of regional hydroclimate variability to global climate change in the geologic past. To do this, I develop and manage large multi-proxy datasets and utilize analytical techniques such as proxy compositing, geospatial statistics, and data assimilation. These results provide insight into modern climate dynamics and the impacts of current climate change on the global hydrological cycle.")
+                               h4("I am a climate and data scientist passionate about using data to understand and quantify changes to Earth’s environment. My current research integrates information from paleoclimate proxies with climate model simulations to reconstruct the response of regional hydroclimate variability to global climate change in the geologic past. To do this, I compile and manage large multi-proxy datasets and develop opensource software to utilize analytical techniques such as timeseries analysis, geospatial statistics, and data assimilation. These results provide insight into modern climate dynamics and the impacts of current climate change on the global hydrological cycle. ")
                                ),verbatimTextOutput("txtout")
                              ),
                           ),
                   tabPanel("Research",
                            fluidRow(mainPanel(h3(HTML("<b>Publications</b>")))),
                            fluidRow(
+                              sidebarPanel(img(src = '2024_Hancock.png',width="100%"),width=3),
+                              mainPanel(h5(HTML("<b>Hancock, C.</b>, Erb, M. P., McKay, N. P., and Dee, S. G.: A global Data Assimilation of Moisture Patterns from 21,000–0 BP (DAMP-21ka) using lake level proxy records, EGUsphere [preprint], https://doi.org/10.5194/egusphere-2024-746, 2024.")),
+                                        h5(" "),
+                                        h5(a("Article",href="https://doi.org/10.5194/egusphere-2024-746")),
+                                        h5(a("GitHub",href="https://github.com/clhancock/HoloceneHydroclimate"))
+                              ,width=9),verbatimTextOutput("txtout")
+                           ),
+                           fluidRow(
                              sidebarPanel(img(src = '2023_Hancock.png',width="100%"),width=3),
-                             mainPanel(h5(HTML("<b>Hancock, C.</b>, McKay, N. P., Erb, M. P., Kaufman, D. K., Routson, C., Ivanovic, R. F., Gregoire, L. J., and Valdes, P.: Global synthesis of regional Holocene hydroclimate variability using proxy and model data, Paleoceanography and Paleoclimatology")), 
+                             mainPanel(h5(HTML("<b>Hancock, C.</b>, McKay, N. P., Erb, M. P., Kaufman, D. K., Routson, C., Ivanovic, R. F., Gregoire, L. J., and Valdes, P.: Global synthesis of regional Holocene hydroclimate variability using proxy and model data, Paleoceanography and Paleoclimatology, https://doi.org/10.1029/2022PA004597, 2023.")),
                                        h5(" "),
-                                       h5("Submitted as of 12/2022"),
-                                       #h5(a("Article",href="https://doi.org/10.5194/cp-18-2599-2022/")),
+                                       h5(a("Article",href="https://doi.org/10.1029/2022PA004597")),
                                        h5(a("GitHub",href="https://github.com/clhancock/HoloceneHydroclimate"))
                              ,width=9),verbatimTextOutput("txtout")
                            ),
