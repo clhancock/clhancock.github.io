@@ -19,7 +19,7 @@ ui <- fluidPage(theme = shinytheme("yeti"),
                                h4("Northern Arizona University"),
                                h4("School of Earth and Sustainability"),
                                h3(HTML("<b>About:</b>")),
-                               h4("I am a climate and data scientist passionate about using data to understand and quantify changes to Earth’s environment. My current research integrates information from paleoclimate proxies with climate model simulations to reconstruct the response of regional hydroclimate variability to global climate change in the geologic past. To do this, I compile and manage large multi-proxy datasets and develop opensource software to utilize analytical techniques such as timeseries analysis, geospatial statistics, and data assimilation. These results provide insight into modern climate dynamics and the impacts of current climate change on the global hydrological cycle.")
+                               h4("I am a climate and data scientist passionate about using data to understand Earth’s changing environments. My current research integrates information from paleoclimate proxies with climate model simulations to reconstruct change in Earth's geologic past. To do this, I compile and manage large multi-proxy datasets and develop opensource software to utilize analytical techniques such as timeseries analysis, geospatial statistics, and data assimilation. These results provide insight into modern climate dynamics and the impacts of current climate change on the global hydrological cycle.")
                                ),verbatimTextOutput("txtout")
                              ),
                           ),
