@@ -7,7 +7,7 @@ ui <- fluidPage(theme = shinytheme("yeti"),
                   tabPanel("Home",
                            fluidRow(
                              sidebarPanel(
-                               img(src = 'chris_headshot.png', width = "80%"),
+                               img(src = 'chris_headshot.png', width = "100%"),
                                a(img(src = 'github.png', width = "100%"), href = "https://github.com/clhancock/"),
                                a(img(src = 'linkedin.png', width = "100%"), href = "https://www.linkedin.com/in/clhancock/")
                              ),
@@ -17,21 +17,21 @@ ui <- fluidPage(theme = shinytheme("yeti"),
                                h4("Northern Arizona University"),
                                h4("School of Earth and Sustainability"),
                                h3(HTML("<b>About:</b>")),
-                               h4("I am a climate and data scientist passionate about using data to understand and quantify changes to Earth’s environment. My current research integrates information from paleoclimate proxies with climate model simulations to reconstruct the response of regional hydroclimate variability to global climate change in the geologic past. To do this, I compile and manage large multi-proxy datasets and develop open-source software to utilize analytical techniques such as time-series analysis, geospatial statistics, and data assimilation. These results provide insight into modern climate dynamics and the impacts of current climate change on the global hydrological cycle.")
+                               h4("I am a climate and data scientist passionate about using data to understand Earth’s changing environment. My current research integrates information from paleoclimate proxies with climate model simulations to reconstruct regional hydroclimate variability in response to global climate change in the geologic past. To do this, I compile and manage large multi-proxy datasets and develop opensource software to utilize analytical techniques such as time-series analysis, geospatial statistics, and data assimilation. These results provide insight into modern climate dynamics and the impacts of current climate change on the global hydrological cycle.")
                              )
                            )
                   ),
                   tabPanel("Research",
                            fluidRow(
                              sidebarPanel(
-                               img(src = '2023_Hancock.png', width = "100%"),
+                               img(src = '2024_Hancock.png', width = "100%"),
                                width = 3
                              ),
                              mainPanel(
-                               h5(HTML("<b>Hancock, C.</b>, McKay, N. P., Erb, M. P., Kaufman, D. K., Routson, C., Ivanovic, R. F., Gregoire, L. J., and Valdes, P.: Global synthesis of regional Holocene hydroclimate variability using proxy and model data, Paleoceanography and Paleoclimatology, <a href='https://doi.org/10.1029/2022PA004597'>https://doi.org/10.1029/2022PA004597</a>, 2023.")),
+                               h5(HTML("<b>Hancock, C.</b>, Erb, M. P., McKay, N. P., and Dee, S. G.: A global Data Assimilation of Moisture Patterns from 21,000–0 BP (DAMP-21ka) using lake level proxy records, EGUsphere [preprint], https://doi.org/10.5194/egusphere-2024-746, 2024.")),
                                h5(" "),
-                               h5(a("Article", href = "https://doi.org/10.1029/2022PA004597")),
-                               h5(a("GitHub", href = "https://github.com/clhancock/HoloceneHydroclimate"))
+                               h5(a("Article", href = "https://doi.org/10.5194/egusphere-2024-746")),
+                               h5(a("GitHub", href = "https://github.com/clhancock/DAMP21ka"))
                              ),
                              width = 9
                            ),
@@ -71,3 +71,5 @@ ui <- fluidPage(theme = shinytheme("yeti"),
 server <- function(input, output, session) {}
 
 shinyApp(ui = ui, server = server)
+
+#rsconnect::deployApp('/Users/chrishancock/Library/CloudStorage/OneDrive-NorthernArizonaUniversity/Personal/clhancock/Website/')
