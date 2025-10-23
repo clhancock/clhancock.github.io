@@ -29,12 +29,12 @@ ui <- fluidPage(theme = shinytheme("yeti"),
                              ),
                              mainPanel(
                                h5(HTML("<b>Hancock, C L..</b>, Dee S. G., Haider, M. R., Murphy, K., Doss-Gollin, J., Lehner, F., Muñoz, S. E. (in review). Robust 21st century hydrological trends in the Mississippi River basin from CMIP6: west-gets-drier, east-gets-wetter, Journal of Climate.")),
-                                  h5(" "),
-                                  #h5(a("Article", href = "https://doi.org/10.5194/cp-20-2663-2024")),
-                                  h5(a("GitHub", href = "https://linked.earth/actR/")),
-                               ),
-                               width = 9
+                               h5(" "),
+                               #h5(a("Article", href = "https://doi.org/10.5194/cp-20-2663-2024")),
+                               h5(a("GitHub", href = "https://linked.earth/actR/")),
                              ),
+                             width = 9
+                           ),
                            fluidRow(
                              sidebarPanel(
                                img(src = 'RAW_Hancock2.png', width = "100%"),
@@ -45,7 +45,7 @@ ui <- fluidPage(theme = shinytheme("yeti"),
                                h5(" "),
                                #h5(a("Article", href = "https://doi.org/10.5194/cp-20-2663-2024")),
                                h5(a("GitHub", href = "https://linked.earth/actR")),
-                               ),
+                             ),
                              width = 9
                            ),
                            fluidRow(
@@ -111,5 +111,6 @@ ui <- fluidPage(theme = shinytheme("yeti"),
 server <- function(input, output, session) {}
 
 shinyApp(ui = ui, server = server)
+
 
 #rsconnect::deployApp('/Users/christopherhancock/Library/CloudStorage/Box-Box/Personal/clhancock/Website/')
